@@ -1,0 +1,107 @@
+
+
+<nav class="navbar ">
+  <div class="container-fluid">
+    <a class="navbar-brand">Covid 19 Nepal</a>
+    <div class="navbar">
+      <div class="nav-item">
+        <a class="nav-link" routerLink="/post">Gallery</a>
+      </div>
+      <div class="nav-item">
+
+        <a class="nav-link active" routerLink="/profile">Cases Info</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" routerLink="/table">Posts</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" routerLink="/comments">Country</a>
+
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" routerLink="/todos">News</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" routerLink="/join">Join as Volenteer</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<!--<div class="app">
+
+
+
+
+
+  <h2>Enter your product name .</h2>
+  <input type="text" class="col-md-4 form-control inputlength" [(ngModel)]="item"  />
+  <h2>Enter product description .</h2>
+  <input type="text" class="col-md-4 form-control inputlength" [(ngModel)]="description" />
+  <h2>Enter Price .</h2>
+  <input type="text" class="col-md-4 form-control inputlength" [(ngModel)]="price"  />
+
+
+
+
+  <button type="button" class="btn btn-primary" (click)="addItem()">Add Item</button>
+
+</div>-->
+<!--<table class="table table-dark" *ngIf="listitem.length>0">
+  <thead>
+  <th>Index</th>
+  <th>Product</th>
+  <th colspan="6">Description</th>
+  <th>Price</th>
+  <th>Action</th>
+
+  </thead>-->
+<!--<tr *ngFor='let item of listitem;let i = index'>
+    <td>
+      {{i+1}}
+    </td>
+    <td>
+      {{item.product}}
+    </td>
+    <td colspan="6">
+      {{item.description}}
+    </td>
+    <td>
+      {{item.price}}
+    </td>
+    <td>
+      <button class="btn btn-danger" (click)="indexremove(i)">remove</button>
+    </td>
+  </tr>
+</table>-->
+<!--<table class="table">
+  <thead>
+    <tr>
+    <th>Name</th>
+    <th>Username</th>
+    <th>Email</th>
+    <th>City</th>
+  </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let profile of apiServerData">
+      <td>{{profile.name}}</td>
+      <td>{{profile.username}}</td>
+      <td>{{profile.email}}</td>
+      <td>{{profile.address.city}}</td>
+    </tr>
+  </tbody>
+</table>-->
+<router-outlet></router-outlet>
+
+
+
+
+
+
+

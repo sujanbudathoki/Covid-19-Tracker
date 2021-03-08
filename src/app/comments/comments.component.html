@@ -1,0 +1,18 @@
+<div class="btn btn-primary">
+  Latest Comments
+</div>
+<div class="column">
+  <div class="row-md-4" *ngFor="let item of apiServerData;let i = index">
+    <div class="card" *ngIf="i<30">
+      <div class="card-body">
+        <h5 class="card-title">
+          Name - {{item.name}} [{{item.email}}]
+        </h5>
+        <div class="card-text">
+          Comment - " {{item.body}} "
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

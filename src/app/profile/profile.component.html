@@ -1,0 +1,15 @@
+<div class="row">
+  <h2 class="alert alert-danger"> Total Positive Cases - {{apiData}}</h2>
+
+  <h2 class="alert alert-primary">Total Negative Cases - {{listitem}}</h2>
+
+  <h2 class="alert alert-primary">Total Tested Cases - {{tested_total}}</h2>
+  <div class="col-md-2" *ngFor="let profile of apiserverData;let i = index">
+    <div class="card" *ngIf="i<20">
+      <div class="card-body">
+        <h5 class="card-title">{{profile.title}}</h5>
+        <img class="card-img-top" [src]="profile.url" />
+      </div>
+    </div>
+  </div>
+</div>
