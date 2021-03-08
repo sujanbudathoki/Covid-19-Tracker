@@ -9,6 +9,14 @@ import {Observable}   from "rxjs"
 export class AppService {
 
   constructor(private http: HttpClient) { }
+
+  getFaqs(): Observable<any> {
+    return this.http.get("https://nepalcorona.info/api/v1/faqs");
+  }
+
+  getNewsData(): Observable<any> {
+    return this.http.get("https://nepalcorona.info/api/v1/news");
+  }
     getCovidSummary(): Observable <any> {
 
       return this.http.get("https://nepalcorona.info/api/v1/data/nepal");

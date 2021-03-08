@@ -10,7 +10,8 @@ export class PostsComponent implements OnInit {
   appServerData: any[];
   commentDataFactory: any[];
   comments: any[];
-  
+  faqData: any[];
+
   loadComments: boolean;
   
 
@@ -18,10 +19,15 @@ export class PostsComponent implements OnInit {
     this.appServerData = [];
     this.commentDataFactory = [];
     this.comments = [];
+    this.faqData = [];
 
     this.loadComments = false;
     this.appService.getPosts().subscribe(user => {
       this.appServerData = user;
+
+    });
+    this.appService.getFaqs().subscribe(user => {
+      this.faqData = user.data;
 
     });
     
